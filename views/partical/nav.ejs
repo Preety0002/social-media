@@ -1,0 +1,42 @@
+<nav >
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+<%if(user){%>
+  <a class="nav-link active" aria-current="page" href="/profile">home</a>
+    </li>
+    <li class="nav-item">
+  <a class="nav-link" href="/logout-user">logout</a>
+  </li>
+<%}else{%>
+  <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/">home</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="/login">Login</a>
+  </li>
+
+<%}%>
+<li class="nav-item">
+<a class="nav-link" href="/about">About</a>
+</li>
+  </ul>
+  
+
+    <!-- <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout-user">logout</a>
+        </li>
+        
+      </ul> -->
+      <hr>
+</nav>
+

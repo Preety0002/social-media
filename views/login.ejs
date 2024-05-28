@@ -1,0 +1,44 @@
+<%- include("partical/header")%>
+<%- include("partical/nav")%>
+<style>
+  .bgcolor{
+    color: white;
+    background-color: rgb(3, 38, 51);
+    border-radius: 10%;
+  }
+</style>
+
+<h1>LOGIN PAGE</h1>
+
+<div class="p-3 mb-2 bg-success text-white">
+
+
+<form action="/login-user" method="post">
+  <div class="mb-3">
+    <label for="exampleInputUsername" class="form-label">username</label>
+    <input type="text" class="form-control"  placeholder="username" name="username">
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+  </div>
+  <div class="mb-3 form-check"> 
+    
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+<br><br>
+  <a class="btn btn-primary" href="/forget-email">ForgetEmail</a>
+  <br> <br>
+
+ 
+  <a class="btn btn-primary" href="/register"> NEW REGISTER</a>
+
+</form>
+
+</div>
+
+<%- include("partical/footer")%>
+
+

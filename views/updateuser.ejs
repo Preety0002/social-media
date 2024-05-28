@@ -1,0 +1,50 @@
+<%- include("partical/header")%>
+<%- include("partical/nav")%>
+
+<a href="/reset-password/<%=user._id%>">ResetPassword</a>
+
+<h2>UPDATE USER</h2>
+
+
+<div class="container">
+    <form class=" form-image" action="/image/<%=user._id%>" method="post" enctype="multipart/form-data">
+        <input class="input-image" type="file" name="profilepic">
+    </form>
+    
+    <img class="preview-image rounded-circle img-thumbnail" src="/images/<%=user.profilepic%>"  alt="Small Round Image" style="width: 100px; height: 100px;">
+
+  </div>
+
+<div class="bg-success p-2 text-white bg-opacity-75">
+
+<form action="/update-user/<%=user._id%>" method="post">
+   
+<input type="text" name="name"  placeholder="fullname" value="<%=user.name%>">
+<br><br>
+<input type="text" name="username"  placeholder="username" value="<%=user.username%>">
+<br><br>
+<input type="text" name="email"  placeholder="email@service.provider" value="<%=user.email%>">
+<br><br>
+<input type="password" name="password"  placeholder="******">
+<br> <br>
+<button>update user</button>
+</form>
+
+<a href="/delete-user/<%=user._id%>">Delete profile</a>
+
+</div>
+
+<script>
+    const inputimage=document.querySelector(".input-image");
+    const previewimage=document.querySelector(".preview-image")
+    const formimage=document.querySelector(".form-image")
+    previewimage.addEventListener("click",function(){
+        inputimage.click()
+    })
+    inputimage.addEventListener("change",function(){
+        formimage.submit()
+    })
+</script> 
+
+
+<%- include("partical/footer")%>

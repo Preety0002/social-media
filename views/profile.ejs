@@ -1,0 +1,61 @@
+
+ 
+ <%- include("partical/header")%>
+  <%- include("partical/nav")%>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* background-color: black; */
+      margin-right: 20%;
+      
+    }
+    .card-body{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: peru;
+    }
+  </style>
+    
+     <h6>profile image</h6> 
+    
+    <div class="container">
+      <img src="https://images.unsplash.com/photo-1583766395091-2eb9994ed094?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVsfGVufDB8fDB8fHww" class="rounded-circle img-thumbnail" alt="Small Round Image" style="width: 100px; height: 100px;">
+      <h3>Name</h3>
+      <h3>Date</h3>
+    </div>
+
+   <div class="card" style="width: 15rem;">
+    <img src="https://images.unsplash.com/photo-1583766395091-2eb9994ed094?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVsfGVufDB8fDB8fHww" class="card-img-top" alt="...">
+    <div class="card-body">
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <i class="ri-heart-line"></i>              <i  class="ri-chat-3-line" ></i>
+    </div>
+    
+  </div>
+
+
+  <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <i class="ri-search-line"></i>
+      <i class="ri-add-large-line"></i>
+      <!-- <i class="ri-user-3-fill"></i> -->
+      <a href="/update-user/<%=user._id%>" class="ri-user-3-fill"></a>
+    </div>
+    
+  </div>
+
+    <%- include("partical/footer")%>
+
+
+    

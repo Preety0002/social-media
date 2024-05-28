@@ -1,0 +1,25 @@
+<%- include("partical/header")%>
+<%- include("partical/nav")%>
+  <style>
+    .mb-3{
+      background-color: darkolivegreen;
+      color: white;
+    }
+    .bgcolor{
+      background-color: darkolivegreen;
+      color: white;
+    }
+  </style>
+<h1> Forget Email Reset</h1>
+
+<form action="/forget-email" method="post" class="bgcolor">
+    <div class="mb-3">
+    
+      <label for="exampleInputUsername" class="form-label">Email</label>
+      <input type="email" class="form-control"  placeholder="email@existing.user" name="email">
+      
+    </div>
+ <button>Submit</button>
+</form>
+
+<%- include("partical/footer")%> 
